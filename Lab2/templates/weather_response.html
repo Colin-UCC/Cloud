@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+
+
+<section>{{ weather.city }}</section>
+
+<p>{{ weather.temperature }}</p>
+
+<figure>
+    <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+</figure>
+
+<p>{{ weather.description }}</p>
+{% endblock %}

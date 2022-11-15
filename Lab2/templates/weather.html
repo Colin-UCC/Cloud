@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<section>
+    <form action="/weather" method="POST">
+        <label for="city">Enter your city:</label>
+        <input name="city" type="text" name="city" , value=" {{ city }}" />
+        <br />
+
+        <input type="submit" name = "submit"/>
+    </form>
+</section>
+
+
+{% endblock %}

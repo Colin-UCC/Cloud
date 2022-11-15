@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<section>Stats</section>
+
+<table>
+    <caption>
+        Requested cities
+    </caption>
+    <tr>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Description</th>
+        
+    </tr>
+
+    {% for city in cities %}
+    <tr>
+        <td>{{ city[0] }}</td>
+        <td>{{ city[1] }}</td>
+        <td>{{ city[2] }}</td>
+        
+{% endfor %}
+</table>
+
+{% endblock %}
